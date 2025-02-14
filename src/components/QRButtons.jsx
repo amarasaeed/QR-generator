@@ -5,13 +5,13 @@ const QRButtons = ({ generateQRCode, clearQRCode }) => {
         <div className="flex justify-between">
             <button
                 onClick={generateQRCode}
-                className="w-1/2 h-10 rounded-md bg-blue-500 text-white font-bold text-lg cursor-pointer transition-all duration-200 hover:bg-blue-600 mr-2"
+                className="w-1/2 h-10 bg-black text-white font-semibold cursor-pointer transition-all duration-200 mr-2"
             >
-                Generate QR Code
+                Generate
             </button>
             <button
                 onClick={clearQRCode}
-                className="w-1/2 h-10 rounded-md bg-blue-500 text-white font-bold text-lg cursor-pointer transition-all duration-200 hover:bg-blue-600"
+                className="w-1/2 h-10 bg-transparent text-red-600 font-semibold cursor-pointer transition-all duration-200"
             >
                 Clear
             </button>
