@@ -7,9 +7,9 @@ const useQRCodeGenerator = () => {
 
     // Validate input based on the active tab
     const validateInput = (value) => {
-        if (activeTab === "url") 
+        if (activeTab === "url")
             return /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([\/\w .-]*)*\/?$/.test(value);
-        if (activeTab === "email") 
+        if (activeTab === "email")
             return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(value);
         return value.trim().length > 0;
     };
