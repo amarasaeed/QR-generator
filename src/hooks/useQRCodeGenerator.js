@@ -17,7 +17,11 @@ const useQRCodeGenerator = () => {
     // Generate QR Code
     const generateQRCode = () => {
         if (validateInput(input)) {
-            setQrValue(input);
+            if (activeTab === "email") {
+                setQrValue(`mailto:${input}`); // Prefix email with mailto:
+            } else {
+                setQrValue(input);
+            }
         } else {
             alert("Please enter a valid input for the selected tab.");
         }
